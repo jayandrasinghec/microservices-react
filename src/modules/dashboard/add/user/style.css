@@ -1,0 +1,48 @@
+.cym-add-user-form h2{color:var(--d-black); font-size: 28px; line-height: 33px; font-weight: normal;}
+.cym-add-user-form .user-assigned-btn a{border-radius: 7px; background: var(--l-gray); color:var(--white); display: inline-block; font-size: 16px; font-weight: 300; padding: 0; display: inline-block;}
+.cym-add-user-form .user-assigned-btn a .process-icon{background: var(--d-gray); padding:10px 15px; display: inline-block; border-top-left-radius: 7px; border-bottom-left-radius:7px; box-shadow: 0px 3px 40px rgba(59, 124, 255, 0.2);}
+.cym-add-user-form .user-assigned-btn a .text-process{padding: 0 30px}
+.cym-add-user-form .user-assigned-btn a.active, .cym-add-user-form .user-assigned-btn a.active .process-icon{background: var(--primary-blue);}
+.cym-add-user-form .user-assigned-btn a:hover, .cym-add-user-form .user-assigned-btn a:hover .process-icon{background: var(--primary-blue);}
+
+.add-user-form{border-radius: 10px; background: rgba(255,255,255,.2); padding: 30px; max-height: 350px; overflow-y: auto; }
+.add-user-form .form-row label{font-weight: 300; color:var(--d-black);}
+.add-user-form .form-row .form-control{background: rgba(255,255,255,.3); border:1px solid var(--lavendar); height: 40px;}
+
+.add-user-form .form-row .nice-select{background: rgba(255,255,255,.2);}
+.add-user-form .form-row .nice-select:after{width:10px; height: 10px; margin: -8px 5px 0 0;     border-bottom: 2px solid var(--black); border-right: 2px solid var(--black);}
+.add-user-form .primary-btn-view{padding: 8px 40px;}
+.add-user-form .primary-btn-view:hover{border: none;}
+.add-user-form .add-info{font-weight: 300; color:var(--primary-blue); text-decoration: none;}
+
+
+.add-user-group-row .nice-select{background: rgba(255,255,255,.2);}
+.add-user-group-row .nice-select:after{width:10px; height: 10px; margin: -8px 5px 0 0;     border-bottom: 2px solid var(--black); border-right: 2px solid var(--black);}
+
+.add-user-group{}
+.add-user-group .more-user-btn{background: var(--l-gray) url(/img/icons/down.svg) no-repeat 88% 11px; border-radius: 15px; padding: 7px 30px 7px 25px; font-size: 12px; color:var(--white); background-size: 7%;}
+.add-user-group .more-user-btn:hover{text-decoration: none;}
+
+.add-user-group-row{background: var(--white);box-shadow: 0px 2px 4px var(--solitude);border-radius: 6px; padding: 25px;}
+.add-user-group-row .user-group-lhs h5{font-size: 18px; color:var(--primary-blue); line-height: 21px; margin-bottom: 0;}
+.add-user-group-row .user-group-lhs span.sub-desc{ color:var(--l-gray); font-weight: 300; color:var(--d-black); font-size: 14px;}
+.add-user-group-row .save-btn{color:var(--zamzezi); font-weight: 300;}
+.add-user-group-row .save-btn:hover{text-decoration: none;}
+
+.add-user-group-row .add-group-btn{color:var(--zamzezi); font-weight: 300; padding: 0 0 0 30px; background:url("/assets/img/icons/green-tick.svg") no-repeat left center;}
+.add-user-group-row .add-group-btn:hover{text-decoration: none;}
+
+.add-user-group-row .assign-app-btn{color:var(--primary-blue); font-weight: 600; font-size: 18px;}
+
+.add-user-progress{position: relative; z-index: 100;}
+.add-user-progress::before{position: absolute;background: var(--l-gray);height: 1px;content: "";width: 86%;left: 6%;top: 13px;z-index: 1;}
+.add-progress-col{text-align: center; position: relative; z-index: 100;}
+.add-progress-col.active .progress-text{color:var(--primary-blue); font-weight: 500;}
+.add-progress-col .progress-icon{background: var(--l-gray); width:26px; height: 26px; display: inline-block; border-radius: 50px; border:5px solid transparent;}
+.add-progress-col.active .progress-icon{border: 5px solid var(--primary-blue); background: var(--c-white);}
+.add-progress-col .progress-text{color:#8392A7; font-size: 16px; font-weight: 300;}
+.add-progress-col.active .progress-text svg path{fill: var(--primary-blue) !important;}
+
+.add-progress-col.complete .progress-text{color:var(--primary-blue); font-weight: 300;}
+.add-progress-col.complete .progress-icon{background: var(--primary-blue); position: relative;}
+.add-progress-col.complete .progress-icon::before{position: absolute;  content: '\2713'; left:0; top:0; color:var(--white); line-height: 17px;}

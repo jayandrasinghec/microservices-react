@@ -1,0 +1,67 @@
+.user-card-layout{height: calc(100% - 140px); overflow-y: auto; overflow-x: hidden; padding: 0;}
+.user-card-layout .user-card{background: #FFFFFF;box-shadow: 0px 2px 4px #EFF2F7;border-radius: 10px; padding: 20px; margin-bottom: 20px; position: relative;}
+.user-card-layout .user-card .avatar{border-radius: 100px; width:90px; height: 90px;}
+.user-card-layout .user-card .cym-user-avatar-view{position: relative; width: 90px; margin: 0 auto;}
+.user-card-layout .user-card .online-status-badge{ position: absolute; width:20px; height: 20px; display: inline-block; border-radius: 50px; bottom:0; right:14%;}
+.user-card-layout .user-card .avail{background: var(--green);}
+.user-card-layout .user-card .away{background: var(--Tangerine-Yellow);}
+.user-card-layout .user-card .offline{background: var(--cinnabar);}
+.user-card-layout .user-card .user-per-detail {border-bottom: 1px solid #dbdbdb;}
+.user-card-layout .user-card .user-per-detail h5{color:var(--secondary-blue); font-size: 16px; font-weight: 600; margin: 0;}
+.user-card-layout .user-card .user-per-detail span{color:var(--l-gray); font-size: 12px;}
+.user-card-layout .user-card .user-contact a{color:var(--d-black); font-size: 13px;}
+.user-card-layout .user-card .user-contact a:hover{text-decoration: none;}
+.user-card-layout .user-card .user-contact a > span.icon-view{width:22px; height: 22px; display: inline-block; border-radius: 50px;}
+.user-card-layout .user-card .user-contact a > span.text-view{display: inline-block; width:85%; overflow:hidden; white-space: nowrap; text-overflow: ellipsis; padding: 0 0 0 10px;}
+.user-card-layout .user-card .user-contact a.mail-to span.icon-view{background:#8392A7 url("/assets/img/icons/mail.svg") center no-repeat; }
+.user-card-layout .user-card .user-contact a.contact-info span.icon-view{background:#8392A7 url("/assets/img/icons/call.svg") center no-repeat; }
+
+.user-card-layout .user-card .user-menu-view{position: absolute; right:15px; top:20px; cursor: pointer;}
+.user-card-layout .user-card .user-menu-view span{background:var(--rhino); width:4px; height: 4px; display: inline-block; margin: 0 2px; border-radius: 40px;}
+
+.user-card-layout .user-card .custom-checkbox{position: absolute; left:15px; top:10px;}
+
+.user-dashboard-cont .cym-tab-view .nav-tabs{margin: 0 0 0 -15px;}
+
+.user-card-layout .user-card .dropdown-toggle::after, .user-table-card .dropdown-toggle::after{content: normal;}
+.user-card-layout .user-card .dropdown-menu, .user-table-card .dropdown-menu{padding: 0; margin: 10px 0 0 0; box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2), 0px 8px 10px 1px rgba(0,0,0,0.14), 0px 3px 14px 2px rgba(0,0,0,0.12);}
+.user-card-layout .user-card .dropdown-menu li a, .user-table-card .dropdown-menu li a{padding:10px 15px 10px 40px; display: block; color:var(--grey-suit); font-weight: 300; text-decoration: none; background: url(../img/icons/cube.svg) no-repeat 10px center; font-size: 13px;}
+.user-card-layout .user-card .dropdown-menu li a:hover, .user-table-card  .dropdown-menu li a:hover{background: url(../img/icons/cube.svg) no-repeat 10px center var(--solitude-light);}
+.user-card-layout .user-card .dropdown-menu li + li, .user-table-card  .dropdown-menu li + li{border-top:1px solid var(--solitude-light);}
+.user-card-layout .user-card .dropdown-menu li:last-child a, .user-table-card  .dropdown-menu li:last-child a{background: url(../img/icons/cube.svg) no-repeat 10px center var(--solitude-light);}
+
+
+.user-filter-list{background: var(--white);box-shadow: 0px 2px 4px var(--solitude);border-radius: 10px; padding: 20px;}
+.user-filter-list .filter-labels .ttl-view{font-weight: 300; color:var(--zamzezi); text-transform: uppercase; font-size: 13px;}
+
+.user-filter-list .custom-checkbox [type="checkbox"]:checked + label:before, .user-filter-list .custom-checkbox [type="checkbox"]:not(:checked) + label:before{border-radius: 3px;}
+.user-filter-list .custom-checkbox [type="checkbox"]:checked + label:after{border-radius: 3px;}
+.user-filter-list .location-filter label{font-weight: 300; color:var(--zamzezi); text-transform: uppercase; font-size: 13px;}
+
+.user-filter-list .sort-filter{}
+.user-filter-list .sort-filter .ttl-view{font-weight: 300; color:var(--zamzezi); text-transform: uppercase; font-size: 13px;}
+.user-filter-list .sort-filter .nice-select{background: var(--ghost-white);}
+.user-filter-list .sort-filter .nice-select:after{width:10px; height: 10px; margin: -8px 5px 0 0;     border-bottom: 2px solid var(--black); border-right: 2px solid var(--black);}
+
+
+.user-sort-filter{background: #FFFFFF; border-radius: 7px;}
+.user-sort-filter button{cursor: pointer; padding: 7px;  border:none; background: transparent;}
+.user-sort-filter button:first-child{border-top-left-radius: 7px; border-bottom-left-radius: 7px;}
+.user-sort-filter button:last-child{border-top-right-radius: 7px; border-bottom-right-radius: 7px;}
+.user-sort-filter button.active{background: var(--primary-blue);}
+.user-sort-filter button:focus{outline: none;}
+
+.user-cards-table{}
+.user-table-card{background: var(--white);box-shadow: 0px 2px 4px var(--solitude);border-radius: 10px; padding: 10px; margin: 0 0 1px 0;}
+.user-table-card .user-avatar img{width:50px; height: 50px; border-radius: 100px;}
+.user-table-card .user-card-detail h5{color:var(--secondary-blue); font-size: 16px; font-weight: 600; margin: 0; display: block; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
+.user-table-card  .user-card-detail  span{color:var(--l-gray); font-size: 12px;}
+.user-table-card .user-contact a{color:var(--d-black); font-size: 13px;}
+.user-table-card .user-contact a:hover{text-decoration: none;}
+.user-table-card .user-contact a > span.icon-view{width:22px; height: 22px; display: inline-block; border-radius: 50px;}
+.user-table-card .user-contact a > span.text-view{display: inline-block; width:85%; overflow:hidden; white-space: nowrap; text-overflow: ellipsis; padding: 0 0 0 10px;}
+.user-table-card .user-contact a.mail-to span.icon-view{background:#8392A7 url("/assets/img/icons/mail.svg") center no-repeat; }
+.user-table-card .user-contact a.contact-info span.icon-view{background:#8392A7 url("/assets/img/icons/call.svg") center no-repeat; }
+
+.user-table-card .user-menu-view{ cursor: pointer;}
+.user-table-card .user-menu-view span{background:var(--rhino); width:4px; height: 4px; display: inline-block; margin: 0 2px; border-radius: 40px;}

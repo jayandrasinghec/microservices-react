@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body, html, #root, #app {
+  height: 100%;
+}
+
+.MuiToggleButton-root.Mui-selected {
+  background: #363793 !important;
+  color: #fff !important;
+}
+
+a, a:hover, a:visited {
+  text-decoration: none;
+}
+
+.app-search-field .MuiInputBase-root {
+  background: #fff;
+}

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		<title>Groups Add Group V2</title>
+		<meta name="" content="noarchive">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="title" content="">
+		<meta name="description" content="">
+		<link rel="SHORTCUT ICON" href="">
+    <link href="%PUBLIC_URL%/assets/css/fonts.css" rel="stylesheet">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/add-user.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/users.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/group-add-groupV2.css" />
+
+    <link rel="stylesheet" type="text/css" href="assets/css/nice-select.css" />
+<body>
+  <div class="cym-app">
+    <!-- Fixed sidebar -->
+    <div class="cym-app-drawer" style="">
+      <div class="cym-fixed-drawer">
+        <a href="javascript:void(0)" class="fixed-logo w-100"><img src="data:image/png;base64,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" alt="" title="" /></a>
+        <!-- Menu -->
+          <ul>
+            <li><a href="javascript:void(0)"><span class="icon-view dashboard"></span><span class="text-view">Dashboard</span></a></li>
+            <li><a href="javascript:void(0)"><span class="icon-view directory"></span><span class="text-view">Directory</span></a></li>
+            <li><a href="javascript:void(0)"><span class="icon-view apps"></span><span class="text-view">Applications</span></a></li>
+            <li><a href="javascript:void(0)"><span class="icon-view admin"></span><span class="text-view">Administration</span></a></li>
+            <li><a href="javascript:void(0)"><span class="icon-view setting"></span><span class="text-view">Settings</span></a></li>
+            <li><a href="javascript:void(0)"><span class="icon-view report"></span><span class="text-view">Report</span></a></li>
+          </ul>
+        <!-- Menu -->
+      </div>
+    </div>
+    <!-- Fixed sidebar -->
+    <!-- Body content -->
+      <div class="cym-dashboard-cont add-user-dashboard-cont">
+        <!-- CyM user cards -->
+          <div class="d-flex flex-row align-items-center justify-content-between">
+            <div class="cym-tab-view">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link " id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Users</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Groups</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Organization</a>
+                </li>
+
+                </ul>
+            </div>
+            <!-- notification -->
+              <div class="d-flex flex-row align-items-center">
+                <a href="javascript:void(0)">
+                  <img src="assets/img/icons/bell.svg" alt="" title="" />
+                </a>
+                <div class="user-avatar pl-4">
+                    <a href="javascript:void(0)" class="d-flex flex-row align-items-center">
+                      <span class="user-img pr-2">
+                        <img src="assets/img/user-icon.png" alt="" title="" />
+                      </span>
+                      <span>Caspar Sawrey</span>
+                      <span class="down-arrow ml-2"></span>
+                    </a>
+                </div>
+              </div>
+            <!-- notification -->
+          </div>
+            <!-- Add User data -->
+              <div class="cym-add-user-form pt-4">
+                <h2 class="text-center">Add New Group</h2>
+                <div class="row">
+                  <div class="w-75 m-auto">
+                      <!-- Assign Buttons -->
+                      <div class="pt-3 d-flex flex-column flex-sm-column flex-md-column flex-lg-row  justify-content-between align-items-center">
+                          <div class="add-user-progress d-flex flex-column flex-lg-row justify-content-between align-items-center w-100">
+                            <div class="add-progress-col active  ">
+                              <span class="completed-icon"></span>
+                              <div class="progress-text d-flex flex-row align-items-center">
+                                <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.6615 8.88867H15.1111C15.2691 9.28188 15.3555 9.70623 15.3555 10.1485V15.4738C15.3555 15.6582 15.3201 15.8352 15.2559 15.9998H17.8191C18.7766 15.9998 19.5555 15.2919 19.5555 14.4217V11.5187C19.5556 10.0685 18.2573 8.88867 16.6615 8.88867Z" fill="#8392A7"/>
+                                <path d="M4.20007 10.1485C4.20007 9.70619 4.28641 9.28188 4.44444 8.88867H2.89402C1.29826 8.88867 0 10.0685 0 11.5187V14.4218C0 15.2919 0.778931 15.9998 1.73641 15.9998H4.29965C4.23539 15.8351 4.20007 15.6581 4.20007 15.4737V10.1485Z" fill="#8392A7"/>
+                                <path d="M11.4657 7.11133H8.0897C6.56979 7.11133 5.33325 8.34787 5.33325 9.86778V15.4489C5.33325 15.7534 5.58007 16.0002 5.88454 16.0002H13.6709C13.9753 16.0002 14.2221 15.7534 14.2221 15.4489V9.86778C14.2221 8.34787 12.9856 7.11133 11.4657 7.11133Z" fill="#8392A7"/>
+                                <path d="M9.77772 0C7.81718 0 6.22217 1.39563 6.22217 3.11113C6.22217 4.27473 6.95615 5.29099 8.04011 5.82454C8.55424 6.0776 9.14698 6.22222 9.77772 6.22222C10.4085 6.22222 11.0012 6.0776 11.5153 5.82454C12.5993 5.29099 13.3333 4.2747 13.3333 3.11113C13.3333 1.39566 11.7383 0 9.77772 0Z" fill="#8392A7"/>
+                                <path d="M3.55558 2.6665C2.08516 2.6665 0.888916 3.86274 0.888916 5.33317C0.888916 6.8036 2.08516 7.99984 3.55558 7.99984C3.92858 7.99984 4.28376 7.92257 4.6064 7.7837C5.16425 7.54353 5.62421 7.11838 5.90883 6.58585C6.1086 6.2121 6.22225 5.78571 6.22225 5.33317C6.22225 3.86278 5.02601 2.6665 3.55558 2.6665Z" fill="#8392A7"/>
+                                <path d="M15.9999 2.6665C14.5295 2.6665 13.3333 3.86274 13.3333 5.33317C13.3333 5.78575 13.4469 6.21214 13.6467 6.58585C13.9313 7.11842 14.3913 7.54357 14.9491 7.7837C15.2717 7.92257 15.6269 7.99984 15.9999 7.99984C17.4703 7.99984 18.6666 6.8036 18.6666 5.33317C18.6666 3.86274 17.4703 2.6665 15.9999 2.6665Z" fill="#8392A7"/>
+                                </svg>
+                              
+                                <span class="pl-2">GROUP INFO</span>
+                              </div>
+                            </div>
+                            <div class="add-progress-col active">
+                              <span class="progress-icon"></span>
+                              <div class="progress-text d-flex flex-row align-items-center">
+                                <span> <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 8C10.21 8 12 6.21 12 4C12 1.79 10.21 0 8 0C5.79 0 4 1.79 4 4C4 6.21 5.79 8 8 8ZM8 9C5.33 9 0 10.5633 0 13.6667V16H16V13.6667C16 10.5633 10.67 9 8 9Z" fill="#8392A7"/>
+                                </svg>
+                              </span>
+                                <span class="pl-2">ADD USER</span>
+                              </div>
+                            </div>
+                            <div class="add-progress-col">
+                              <span class="progress-icon"></span>
+                              <div class="progress-text d-flex flex-row align-items-center">
+                                <span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 11.1111H8.88889V0H0V11.1111ZM0 20H8.88889V13.3333H0V20ZM11.1111 20H20V8.88889H11.1111V20ZM11.1111 0V6.66667H20V0H11.1111Z" fill="#8392A7"/>
+                                </svg>
+                              </span>
+                                <span class="pl-2">ASSIGN APPS</span>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                      <!-- Assign Buttons -->
+                      <!-- Add User Form -->
+                        <div class="add-user-form mt-4 cym-custom-scroll">
+                            <!-- Add User Group -->
+                              <div class="add-user-group">
+                                  <!-- Search User -->
+                                    <div class="d-flex flex-column align-items-center justify-content-between flex-sm-column flex-md-row pb-4">
+                                      <!-- search -->
+                                        <div class="">
+                                            <label>Users</label>
+                                        </div>
+                                      <!-- search -->
+                                      <div class="">
+                                        <a href="javascript:void(0)" class="more-user-btn">Bulk Actions</a>
+                                      </div>
+                                    </div>
+                                  <!-- Search User -->
+
+                                  <!-- User Groups -->
+                                    <div class="user-table-card add-user-group-row align-items-center d-flex flex-column flex-sm-column flex-md-column flex-lg-row">
+                                      <div class="user-group-lhs col-12 col-sm-12 col-md-12 col-lg-6 pl-0">
+                                        <div class="d-flex flex-row align-items-center">
+                                          
+                                          <div class="custom-checkbox d-inline-block">
+                                            <input type="checkbox" name="user" id="user02"  /> <label for="user02"></label>
+                                          </div>
+                                          <div class="d-flex flex-row align-items-center">
+                                            <div class="user-avatar">
+                                              <img src="assets/img/user-avatar.jpg" alt="" title=""  />
+                                            </div>
+                                            <div class="user-card-detail pl-2">
+                                              <h5>Corabelle Durrad </h5>
+                                              <span>Sr. Product Manager</span>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="user-group-rhs col-12 col-sm-12 col-md-12 col-lg-6 pr-0 text-right">
+                                        <a href="javascript:void(0)" class="mr-2 assign-app-btn">
+                                          <svg width="40px" height="40px" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M8 3.5a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5H4a.5.5 0 0 1 0-1h3.5V4a.5.5 0 0 1 .5-.5z"/>
+                                            <path fill-rule="evenodd" d="M7.5 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0V8z"/>
+                                          </svg>
+                                        </a>
+                                      </div>
+                                    </div>
+
+
+                                   <div class="user-table-card add-user-group-row align-items-center d-flex flex-column flex-sm-column flex-md-column flex-lg-row ">
+                                      <div class="user-group-lhs col-12 col-sm-12 col-md-12 col-lg-6 pl-0">
+                                        <div class="d-flex flex-row align-items-center">
+                                          <div class="custom-checkbox d-inline-block">
+                                            <input type="checkbox" name="user" id="user02"  /> <label for="user02"></label>
+                                          </div>
+                                          <div class="d-flex flex-row align-items-center">
+                                            <div class="user-avatar">
+                                              <img src="assets/img/user-avatar.jpg" alt="" title=""  />
+                                            </div>
+                                            <div class="user-card-detail pl-2">
+                                              <h5>Corabelle Durrad </h5>
+                                              <span>Sr. Product Manager</span>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="user-group-rhs col-12 col-sm-12 col-md-12 col-lg-6 pr-0">
+                                        <div class="d-flex flex-row align-items-center justify-content-end">
+                                          <select class="nice-select w-50">
+                                            <option>Select Role</option>
+                                          </select>
+                                          <a href="javascript:void(0)" class="save-btn ml-2">Add</a>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="user-table-card add-user-group-row align-items-center d-flex flex-column flex-sm-column flex-md-column flex-lg-row ">
+                                      <div class="user-group-lhs col-12 col-sm-12 col-md-12 col-lg-6 pl-0">
+
+                                        <div class="d-flex flex-row align-items-center">
+                                        <div class="custom-checkbox d-inline-block">
+                                            <input type="checkbox" name="user" id="user02"  /> <label for="user02"></label>
+                                          </div>
+                                          <div class="d-flex flex-row align-items-center">
+                                            <div class="user-avatar">
+                                              <img src="assets/img/user-avatar.jpg" alt="" title=""  />
+                                            </div>
+                                            <div class="user-card-detail pl-2">
+                                              <h5>Corabelle Durrad </h5>
+                                              <span>Sr. Product Manager</span>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="user-group-rhs col-12 col-sm-12 col-md-12 col-lg-6 pr-0">
+                                        <div class="d-flex flex-row align-items-center justify-content-end">
+                                          <a href="javascript:void(0)">
+                                            <img src="assets/img/icons/edit.svg" alt="" title="" />
+                                          </a>
+                                          <a href="javascript:void(0)" class="ml-3">
+                                            <img src="assets/img/icons/delete.svg" alt="" title="" />
+                                          </a>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="user-table-card add-user-group-row align-items-center d-flex flex-column flex-sm-column flex-md-column flex-lg-row ">
+                                      <div class="user-group-lhs col-12 col-sm-12 col-md-12 col-lg-6 pl-0">
+                                        <div class="d-flex flex-row align-items-center">
+                                        <div class="custom-checkbox d-inline-block">
+                                            <input type="checkbox" name="user" id="user02"  /> <label for="user02"></label>
+                                          </div>
+                                          <div class="d-flex flex-row align-items-center">
+                                            <div class="user-avatar">
+                                              <img src="assets/img/user-avatar.jpg" alt="" title=""  />
+                                            </div>
+                                            <div class="user-card-detail pl-2">
+                                              <h5>Corabelle Durrad </h5>
+                                              <span>Sr. Product Manager</span>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="user-group-rhs col-12 col-sm-12 col-md-12 col-lg-6 pr-0">
+                                        <div class="d-flex flex-row  justify-content-end text-right">
+                                          <svg width="40px" height="40px" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M8 3.5a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5H4a.5.5 0 0 1 0-1h3.5V4a.5.5 0 0 1 .5-.5z"/>
+                                            <path fill-rule="evenodd" d="M7.5 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0V8z"/>
+                                          </svg>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <!-- Pagination -->
+                                    <div class="d-flex flex-column flex-sm-column flex-md-row pt-4 pb-3 align-items-center justify-content-between cym-pagination-view">
+                                      <div class="cym-pagination d-flex flex-row align-items-center">
+                                        <ul class="p-0 m-0">
+                                          <li><a href="javascript:void(0)" class="back-to-last page-arrow">
+                                            <img src="assets/img/icons/backward-last.svg" alt="" title="" />
+                                          </a></li>
+                                          <li><a href="javascript:void(0)" class="back-to-prev page-arrow">
+                                            <img src="assets/img/icons/backward.svg" alt="" title="" />
+                                          </a></li>
+                                          <li><a href="javascript:void(0)">1</a></li>
+                                          <li><a href="javascript:void(0)">2</a></li>
+                                          <li><a href="javascript:void(0)">3</a></li>
+                                          <li><a href="javascript:void(0)">4</a></li>
+                                          <li><a href="javascript:void(0)">5</a></li>
+                                          <li><a href="javascript:void(0)" class="forw-to-next page-arrow">
+                                            <img src="assets/img/icons/backward.svg" alt="" title="" />
+                                          </a>
+                                        </li>
+                                        <li><a href="javascript:void(0)" class="forw-to-last page-arrow">
+                                          <img src="assets/img/icons/backward-last.svg" alt="" title="" />
+                                        </a>
+                                      </li>
+                                    </ul>
+                                    <div class="page-drop-down ml-3">
+                                      <a href="javascript:void(0)"><span>16</span></a>
+                                    </div>
+                                  </div>
+                                  <div class="disply-record-status">Displaying <span>80</span> - 96 of 790 records</div>
+                                </div>
+                                <!-- Pagination ends -->
+                                
+                                    <div class="row pt-4 d-flex flex-row flex-md-row flex-sm-column align-items-center justify-content-center">
+                                      <div class="col-12 col-sm-6 col-md-6">
+                                        <label class="m-0">Discard</label>
+                                      </div>
+                                      <div class="col-12 col-sm-6 col-md-6 text-right d-flex flex-row align-items-center justify-content-end">
+                                        <!-- <a href="javascript:void(0)" class="add-info pl-4 pr-4">Skip</a> -->
+                                        <a href="javascript:void(0)" class="primary-btn-view">SAVE</a>
+                                      </div>
+                                    </div>
+                                    </div>
+                                  <!-- User Groups -->
+                              </div>
+                            <!-- Add User Group -->
+                        </div>
+                      <!-- Add User Form -->
+                  </div>
+                </div>
+              </div>
+            <!-- Add User data ends -->
+      </div>
+    <!-- Body content -->
+  </div>
+  <script type="text/javascript" src="assets/js/jquery.min.js" ></script>
+  <script type="text/javascript" src="assets/js/popper.min.js"></script>
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.nice-select.min.js"></script>
+  <script type="text/javascript" src="assets/js/index.js"></script>
+</body>
+</html>

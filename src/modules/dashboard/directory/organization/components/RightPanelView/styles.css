@@ -1,0 +1,117 @@
+.MuiTableCell-root{
+    background-color: white;
+    padding: 2px!important;
+
+} 
+
+.MuiTable-root {
+    background-color:transparent;
+    border-collapse: separate !important;
+    border-spacing: 0 1px !important;
+
+}
+
+
+.Mui-checked{
+    color:rgb(29, 30, 126)!important;
+}
+.table {
+    border-collapse: separate !important;
+    border-spacing: 0 1px !important;
+
+}
+
+
+.MuiPaper-elevation1{
+    box-shadow:none!important;
+}
+
+.MuiTableContainer-root {
+    background-color: transparent!important;
+}
+.MuiTableCell-root .MuiTableCell-head .MuiTableCell-paddingCheckbox{
+    padding: 0px !important;
+}
+.MuiTableCell-paddingCheckbox{
+    padding: 0px !important;
+} 
+
+.table_head{
+height: 40px!important;
+background: #FFFFFF!important;
+box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.25)!important;
+border-radius: 5px !important;
+}
+
+.MuiTableCell-head{
+font-family: 'Poppins', sans-serif !important;
+font-size: 14px !important;
+font-style: normal !important;
+font-weight: 400 !important;
+line-height: 21px !important;
+letter-spacing: 0em !important;
+text-align: left !important;
+color: #173F74 !important;
+
+
+
+}
+.fname{
+    
+    font-family: 'Poppins', sans-serif !important;
+    font-style: normal!important;
+    font-weight: normal!important;
+    font-size: 12px!important;
+    line-height: 18px!important;
+
+    letter-spacing: -0.01em!important;
+    
+    color: #838383 !important;
+}
+.sname{
+
+    font-family: 'Poppins', sans-serif !important;
+    font-style: normal!important;
+    font-weight: normal!important;
+    font-size: 12px!important;
+    line-height: 21px!important;
+    letter-spacing: -0.01em !important;
+    color: #173F74 !important;
+}
+.designation{
+
+    font-family: 'Poppins', sans-serif !important;
+font-style: normal!important;
+font-weight: normal!important;
+font-size: 14px!important;
+line-height: 21px!important;
+
+color: #838383!important;
+}
+.country{
+
+    font-family: 'Poppins', sans-serif !important;
+font-style: normal!important;
+font-weight: normal!important;
+font-size: 14px!important;
+line-height: 21px!important;
+/* identical to box height */
+
+color: #838383!important;
+}
+.loadmore{
+
+
+    font-family: 'Poppins', sans-serif !important;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 18px;
+margin-left: 42px;
+letter-spacing: -0.01em;
+
+color: #51C4F1;
+}
+.MuiTableCell-paddingCheckbox {
+    width: 32px!important;
+}

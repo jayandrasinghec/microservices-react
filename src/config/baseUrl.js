@@ -1,0 +1,1 @@
+export const baseUrl = 'http://13.235.51.49:8080/usersrvc'

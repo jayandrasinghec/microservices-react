@@ -1,0 +1,5 @@
+.modal-subject .form-control{background:rgba(255,255,255,.3)}.modal-subject .nice-select{background:rgba(255,255,255,.3)}.modal-subject .nice-select:after{height:8px;width:8px;margin-top:-6px;border-color:#333}.modal-subject .custom-checkbox [type=checkbox]:checked+label:before,.modal-subject .custom-checkbox [type=checkbox]:not(:checked)+label:before{background:var(--white)}.modal-subject .custom-checkbox [type=checkbox]:checked+label,.modal-subject .custom-checkbox [type=checkbox]:not(:checked)+label{font-weight:500}.settings-add-new-global-modal .modal-header .close-text{font-size:14px;margin-left:18px;margin-top:-12px}
+.content-editor .btn-toolbar{background: #E9EDF6;}
+.content-editor .btn-toolbar .btn-group{background: #F6F6F9}
+
+.content-editor .content-area textarea{background: #F6F6F9; border:0; resize: none; height: 85px;}

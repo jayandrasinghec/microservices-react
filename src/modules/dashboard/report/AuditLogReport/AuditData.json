@@ -1,0 +1,21 @@
+{
+  "columnDefs" : [
+    { "headerName": "Date", "field": "date", "floatingFilter": true, "enableRowGroup": true},
+    { "headerName": "Src_user", "field": "src_user"},
+    { "headerName": "User", "field": "user"},
+    { "headerName": "Service Now Deployment", "field": "ServiceNowDeployment"},
+    { "headerName": "Remarks", "field": "remark"}
+  ],
+  "rowData": [
+    { "date": "1st May", "src_user": "JKBSD", "user": "root", "ServiceNowDeployment": "Location 1", "remark": ""},
+    { "date": "2nd May", "src_user": "ASNSB", "user": "root", "ServiceNowDeployment": "Location 2", "remark": ""},
+    { "date": "3rd May", "src_user": "JKBKU", "user": "root", "ServiceNowDeployment": "Location 3", "remark": "TEST"},
+    { "date": "4th May", "src_user": "AAAJKB", "user": "root", "ServiceNowDeployment": "Location 4", "remark": ""},
+    { "date": "5th May", "src_user": "NBVJKB", "user": "root", "ServiceNowDeployment": "Location 5", "remark": "TEST 4"},
+    { "date": "6th May", "src_user": "JKBSD", "user": "root", "ServiceNowDeployment": "Location 1", "remark": ""},
+    { "date": "7th May", "src_user": "BJSDA", "user": "root", "ServiceNowDeployment": "Location 2", "remark": ""},
+    { "date": "8th May", "src_user": "JKBKU", "user": "root", "ServiceNowDeployment": "Location 3", "remark": "TEST"},
+    { "date": "9th May", "src_user": "AAAJKB", "user": "root", "ServiceNowDeployment": "Location 4", "remark": ""},
+    { "date": "10th May", "src_user": "NBVJK", "user": "root", "ServiceNowDeployment": "Location 5", "remark": "TEST 4"}
+  ]
+}

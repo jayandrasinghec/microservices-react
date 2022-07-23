@@ -1,0 +1,13 @@
+
+
+.font-small{font-size:14px;color:var(--l-gray)}
+.authication-card{position:relative;display:flex;align-items:flex-start;text-decoration:none;color:var(--secondary-blue)}
+.authication-card:after{content:'';position:absolute;right:15px;top:0;bottom:0;margin:auto;background:url(../img/icons/backward.svg) no-repeat;width:10px;height:10px;transform:rotate(180deg);background-size:contain} 
+.authication-card p{line-height:1.1em}
+.authication-card span{font-size:12px;color:var(--l-gray)}
+.primary-color{color:var(--primary-blue)}
+
+.authentication-card{position:relative;display:flex;align-items:flex-start;text-decoration:none;color:var(--secondary-blue);}
+.authentication-card:after{content:'';position:absolute;right:15px;top:0;bottom:0;margin:auto;width:10px;height:10px;transform:rotate(180deg);background-size:contain} 
+.authentication-card p{line-height:1.1em}
+.authentication-card span{font-size:12px;color:var(--l-gray)}

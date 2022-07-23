@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		<title>Add User</title>
+		<meta name="" content="noarchive">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="title" content="">
+		<meta name="description" content="">
+		<link rel="SHORTCUT ICON" href="">
+    <link href="%PUBLIC_URL%/assets/css/fonts.css" rel="stylesheet">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/profile.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/nice-select.css" />
+<body>
+  <div class="cym-app">
+    <!-- Fixed sidebar -->
+    <div class="cym-app-drawer" style="">
+      <div class="cym-fixed-drawer">
+        <a href="javascript:void(0)" class="fixed-logo w-100"><img src="data:image/png;base64,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" alt="" title="" /></a>
+        <!-- Menu -->
+          <ul>
+            <li><a href="javascript:void(0)"><span class="icon-view dashboard"></span><span class="text-view">Dashboard</span></a></li>
+            <li><a href="javascript:void(0)"><span class="icon-view directory"></span><span class="text-view">Directory</span></a></li>
+            <li><a href="javascript:void(0)"><span class="icon-view apps"></span><span class="text-view">Applications</span></a></li>
+            <li><a href="javascript:void(0)"><span class="icon-view admin"></span><span class="text-view">Administration</span></a></li>
+            <li><a href="javascript:void(0)"><span class="icon-view setting"></span><span class="text-view">Settings</span></a></li>
+            <li><a href="javascript:void(0)"><span class="icon-view report"></span><span class="text-view">Report</span></a></li>
+          </ul>
+        <!-- Menu -->
+      </div>
+    </div>
+    <!-- Fixed sidebar -->
+    <!-- Body content -->
+      <div class="cym-dashboard-cont profile-dashboard-cont">
+        <!--Profile-Top-Section-->
+        <div class="profile-top-section d-flex flex-column flex-md-row flex-sm-column align-items-center justify-content-between">
+            <!--profile-image-->
+            <div class="col-12 col-sm-12 col-md-3 profile-image">
+                <img src="assets/img/profile-images.png" alt="" title="" /> 
+            </div>
+            <!--profile-image-->
+
+            <!--profile-details-->
+            <div class="col-12 col-sm-12 col-md-5 profile-details">
+            	<div class="col-12 col-sm-12 col-md-12 profile-name">Hashim Briscam</div>
+            	<div class="col-12 col-sm-12 col-md-12 profile-designation">Sr. Product Manager</div>
+                <div class="col-12 col-sm-12 col-md-12 app-permission">Cymmetri</div>
+                <div class="col-12 col-sm-12 col-md-12 profile-status">Active</div>
+            </div>
+            <!--profile-details-->
+            
+            <!--profile-details-->
+            <div class="col-12 col-sm-12 col-md-4 profile-details profile-connects">
+            	<div class="col-12 col-sm-12 col-md-12"><div class="user-contact">
+                    <a href="mailto:corabelledurrad@cymmetri.com" class="mail-to d-flex flex-row align-items-center"><span class="icon-view"></span> <span class="text-view">corabelledurrad@cymmetri.com</span></a>
+                  </div>
+                </div>
+                
+                <div class="col-12 col-sm-12 col-md-12"><div class="user-contact">
+                    <a href="tel:+1 467 325 7869" class="contact-info d-flex flex-row align-items-center mt-0"><span class="icon-view"></span> <span class="text-view">+1 467 325 7869</span></a>
+                </div>
+                </div>
+                
+            </div>
+            <!--profile-details-->
+            <!--close-->
+			<div class="close-profile-icon"></div>
+            <!--close-->
+
+			
+        </div>
+        <!--Profile-Top-Section-->
+        <!--tabs-->
+        <div class="profile-nav-section d-flex flex-row flex-md-row flex-sm-row align-items-center justify-content-between">
+                <div class="cym-tab-view mb-3 mb-sm-3 mb-md-0">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Application</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Groups</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Info</a>
+                </li>
+                 <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Activity</a>
+                </li>
+                 <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Settings</a>
+                </li>
+                </ul>
+            </div>
+        </div>
+        <!--tabs-->
+        <!-- profile-subtitle -->
+            <div class="profile-subtitle pt-4 d-flex flex-column flex-md-row align-items-center justify-content-between">
+              <div class="col-5 col-sm-12 col-md-4">
+                  <h1 class="profile-assigned-apps-title">Administration</h1>
+              </div>
+              <div class="col-5 col-sm-12 col-md-8 ml-auto text-right">
+                <a href="javascript:void(0)" class="more-user-btn">Most users</a>
+                <a href="JavaScript:void(0)" class="primary-btn-view">Assign Application</a>
+              </div>
+            </div>
+          <!-- profile-subtitle -->
+          
+
+          
+          <!--profile-applications-grid-->
+          <div class="profile-applications-grid mt-3 container-fluid cym-custom-scroll">
+          	<div class="profile-app-grid-wrap">
+                <div class="row pr-2">
+                <!--profile-sapplicaion-card-->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="profile-sapplicaion-card">
+                        <div class="row pr-2  flex-row  align-items-center">
+                            <div class="col-12 col-sm-12 col-md-4">
+                                <img src="assets/img/google.png" alt="" title="" /> 
+                            </div>
+                            <div class="profile-app-name col-12 col-sm-12 col-md-8 text-center">
+                                Google
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--profile-sapplicaion-card-->
+                
+                <!--profile-sapplicaion-card-->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="profile-sapplicaion-card">
+                        <div class="row pr-2 flex-row  align-items-center">
+                            <div class="col-12 col-sm-12 col-md-4">
+                                <img src="assets/img/windows.png" alt="" title="" /> 
+                            </div>
+                            <div class="profile-app-name col-12 col-sm-12 col-md-8 text-center">
+                                Windows
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--profile-sapplicaion-card-->
+                <!--profile-sapplicaion-card-->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="profile-sapplicaion-card">
+                        <div class="row pr-2 flex-row  align-items-center">
+                            <div class="col-12 col-sm-12 col-md-4">
+                                <img src="assets/img/windows.png" alt="" title="" /> 
+                            </div>
+                            <div class="profile-app-name col-12 col-sm-12 col-md-8 text-center">
+                                Windows
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--profile-sapplicaion-card-->
+                <!--profile-sapplicaion-card-->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="profile-sapplicaion-card">
+                        <div class="row pr-2 flex-row  align-items-center">
+                            <div class="col-12 col-sm-12 col-md-4">
+                                <img src="assets/img/windows.png" alt="" title="" /> 
+                            </div>
+                            <div class="profile-app-name col-12 col-sm-12 col-md-8 text-center">
+                                Windows
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--profile-sapplicaion-card-->
+                <!--profile-sapplicaion-card-->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="profile-sapplicaion-card">
+                        <div class="row pr-2 flex-row  align-items-center">
+                            <div class="col-12 col-sm-12 col-md-4">
+                                <img src="assets/img/windows.png" alt="" title="" /> 
+                            </div>
+                            <div class="profile-app-name col-12 col-sm-12 col-md-8 text-center">
+                                Windows
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--profile-sapplicaion-card-->
+                <!--profile-sapplicaion-card-->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="profile-sapplicaion-card">
+                        <div class="row pr-2 flex-row  align-items-center">
+                            <div class="col-12 col-sm-12 col-md-4">
+                                <img src="assets/img/windows.png" alt="" title="" /> 
+                            </div>
+                            <div class="profile-app-name col-12 col-sm-12 col-md-8 text-center">
+                                Windows
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--profile-sapplicaion-card-->
+                <!--profile-sapplicaion-card-->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="profile-sapplicaion-card">
+                        <div class="row pr-2 flex-row  align-items-center">
+                            <div class="col-12 col-sm-12 col-md-4">
+                                <img src="assets/img/windows.png" alt="" title="" /> 
+                            </div>
+                            <div class="profile-app-name col-12 col-sm-12 col-md-8 text-center">
+                                Windows
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--profile-sapplicaion-card-->
+                <!--profile-sapplicaion-card-->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="profile-sapplicaion-card">
+                        <div class="row pr-2 flex-row  align-items-center">
+                            <div class="col-12 col-sm-12 col-md-4">
+                                <img src="assets/img/windows.png" alt="" title="" /> 
+                            </div>
+                            <div class="profile-app-name col-12 col-sm-12 col-md-8 text-center">
+                                Windows
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--profile-sapplicaion-card-->
+                <!--profile-sapplicaion-card-->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="profile-sapplicaion-card">
+                        <div class="row pr-2 flex-row  align-items-center">
+                            <div class="col-12 col-sm-12 col-md-4">
+                                <img src="assets/img/windows.png" alt="" title="" /> 
+                            </div>
+                            <div class="profile-app-name col-12 col-sm-12 col-md-8 text-center">
+                                Windows
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--profile-sapplicaion-card-->
+                <!--profile-sapplicaion-card-->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="profile-sapplicaion-card">
+                        <div class="row pr-2 flex-row  align-items-center">
+                            <div class="col-12 col-sm-12 col-md-4">
+                                <img src="assets/img/windows.png" alt="" title="" /> 
+                            </div>
+                            <div class="profile-app-name col-12 col-sm-12 col-md-8 text-center">
+                                Windows
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--profile-sapplicaion-card-->
+                <!--profile-sapplicaion-card-->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="profile-sapplicaion-card">
+                        <div class="row pr-2 flex-row  align-items-center">
+                            <div class="col-12 col-sm-12 col-md-4">
+                                <img src="assets/img/windows.png" alt="" title="" /> 
+                            </div>
+                            <div class="profile-app-name col-12 col-sm-12 col-md-8 text-center">
+                                Windows
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--profile-sapplicaion-card-->
+                <!--profile-sapplicaion-card-->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="profile-sapplicaion-card">
+                        <div class="row pr-2 flex-row  align-items-center">
+                            <div class="col-12 col-sm-12 col-md-4">
+                                <img src="assets/img/windows.png" alt="" title="" /> 
+                            </div>
+                            <div class="profile-app-name col-12 col-sm-12 col-md-8 text-center">
+                                Windows
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--profile-sapplicaion-card-->
+                
+                <!--profile-sapplicaion-card-->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="profile-sapplicaion-card">
+                        <div class="row pr-2 flex-row  align-items-center">
+                            <div class="col-12 col-sm-12 col-md-4">
+                                <img src="assets/img/windows.png" alt="" title="" /> 
+                            </div>
+                            <div class="profile-app-name col-12 col-sm-12 col-md-8 text-center">
+                                Windows
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--profile-sapplicaion-card-->
+                <!--profile-sapplicaion-card-->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="profile-sapplicaion-card">
+                        <div class="row pr-2 flex-row  align-items-center">
+                            <div class="col-12 col-sm-12 col-md-4">
+                                <img src="assets/img/windows.png" alt="" title="" /> 
+                            </div>
+                            <div class="profile-app-name col-12 col-sm-12 col-md-8 text-center">
+                                Windows
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--profile-sapplicaion-card-->
+                <!--profile-sapplicaion-card-->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="profile-sapplicaion-card">
+                        <div class="row pr-2 flex-row  align-items-center">
+                            <div class="col-12 col-sm-12 col-md-4">
+                                <img src="assets/img/windows.png" alt="" title="" /> 
+                            </div>
+                            <div class="profile-app-name col-12 col-sm-12 col-md-8 text-center">
+                                Windows
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--profile-sapplicaion-card-->
+                <!--profile-sapplicaion-card-->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="profile-sapplicaion-card">
+                        <div class="row pr-2 flex-row  align-items-center">
+                            <div class="col-12 col-sm-12 col-md-4">
+                                <img src="assets/img/windows.png" alt="" title="" /> 
+                            </div>
+                            <div class="profile-app-name col-12 col-sm-12 col-md-8 text-center">
+                                Windows
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--profile-sapplicaion-card-->
+                <!--profile-sapplicaion-card-->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="profile-sapplicaion-card">
+                        <div class="row pr-2 flex-row  align-items-center">
+                            <div class="col-12 col-sm-12 col-md-4">
+                                <img src="assets/img/windows.png" alt="" title="" /> 
+                            </div>
+                            <div class="profile-app-name col-12 col-sm-12 col-md-8 text-center">
+                                Windows
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--profile-sapplicaion-card-->
+                <!--profile-sapplicaion-card-->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="profile-sapplicaion-card">
+                        <div class="row pr-2 flex-row  align-items-center">
+                            <div class="col-12 col-sm-12 col-md-4">
+                                <img src="assets/img/windows.png" alt="" title="" /> 
+                            </div>
+                            <div class="profile-app-name col-12 col-sm-12 col-md-8 text-center">
+                                Windows
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--profile-sapplicaion-card-->
+                <!--profile-sapplicaion-card-->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="profile-sapplicaion-card">
+                        <div class="row pr-2 flex-row  align-items-center">
+                            <div class="col-12 col-sm-12 col-md-4">
+                                <img src="assets/img/windows.png" alt="" title="" /> 
+                            </div>
+                            <div class="profile-app-name col-12 col-sm-12 col-md-8 text-center">
+                                Windows
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--profile-sapplicaion-card-->
+                <!--profile-sapplicaion-card-->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="profile-sapplicaion-card">
+                        <div class="row pr-2 flex-row  align-items-center">
+                            <div class="col-12 col-sm-12 col-md-4">
+                                <img src="assets/img/windows.png" alt="" title="" /> 
+                            </div>
+                            <div class="profile-app-name col-12 col-sm-12 col-md-8 text-center">
+                                Windows
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--profile-sapplicaion-card-->
+                </div>
+            </div>
+          </div>
+          <!--profile-applications-grid-->
+          
+      </div>
+    <!-- Body content -->
+  </div>
+  
+  
+  <!-- Central Modal Small -->
+<div class="modal fade settings-add-new-global-modal" id="centralModalSm1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+
+  <!-- Change class .modal-sm to change the size of the modal -->
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title w-100" id="myModalLabel">Edit Assignment Type</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><img src="assets/img/icons/Shapeclose.svg" alt="" title="" /></span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <form>
+       		<div class="profile-modal-extra d-flex flex-sm-column flex-column flex-lg-row flex-md-column align-items-center">
+            	<div class="col-12 col-sm-12 col-md-12 col-lg-2 pl-0">
+                	<img src="assets/img/google.png" alt="" title="" /> 
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-10 pl-0">
+                	<div class="row pr-2 flex-row  align-items-center">
+                    	<div class="profile-service-title col-12 col-sm-12 col-md-12">
+                        	Google Suite
+                        </div>
+                    </div>
+                	<div class="row pr-2 flex-row  align-items-center">
+                        <div class="col-12 col-sm-12 col-md-9">
+                           <span class="badge badge-pill badge-secondary">API Management</span>  <span class="badge badge-pill badge-secondary">Okta Test Applications</span> <span class="badge badge-pill badge-secondary">Directories and HR System</span>
+                        </div>
+                        <div class="remove-icon col-12 col-sm-12 col-md-3">
+                            <a href="javascript:void" class="pl-2 pr-2 pt-2 pb-2"><img src="assets/img/icons/delete.svg" alt="" title=""> Remove</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+       		<div class="modal-body-white">
+                <div class="settings-forms d-flex flex-sm-column flex-column flex-lg-row flex-md-column align-items-center">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 pl-0">
+                        <div class="form-group">
+                            <label for="inputEmail">Assignment Type</label>
+                            <input type="text" class="form-control" id="inputEmail" placeholder="" required>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 ml-auto">
+                        <div class="form-group pb-0">
+                            <label for="inputEmail">Role</label>
+                            <select class="w-100 nice-select">
+                                    <option>Select Role</option>
+                                    <option>Administrator</option>
+                                  </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="settings-forms profile-form-grey d-flex flex-sm-column flex-column flex-lg-row flex-md-column align-items-center">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-4 pl-0">
+                        <div class="form-group">
+                            <label for="inputEmail">Assigned on</label>
+                            <div class="input-dark">22 - 05 - 2020</div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-4 pl-0">
+                        <div class="form-group">
+                            <label for="inputEmail">Assigned by</label>
+                            <div class="input-dark">Admin</div>
+                        </div>
+                    </div>
+                     <div class="col-12 col-sm-12 col-md-12 col-lg-4 pl-0">
+                        <div class="form-group">
+                            <label for="inputEmail">Assigned through</label>
+                            <div class="input-dark">Sales group</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-left btn-sm mr-auto" data-dismiss="modal">Discard</button>
+        <a href="JavaScript:void(0)" class="primary-btn-view">UPDATE</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Central Modal Small -->
+  
+  
+  <script src="assets/js/jquery.min.js" ></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.nice-select.min.js"></script>
+  <script type="text/javascript" src="assets/js/index.js"></script>
+	  <script>
+	$(document).ready(function(){
+		$("#centralModalSm1").modal('show');
+	});
+</script>
+</body>
+</html>

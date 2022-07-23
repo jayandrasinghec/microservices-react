@@ -1,0 +1,8 @@
+Policy Name,Policy Owner,Policy Description,Rule Name,Rule Description,Business Role A,Business Role B
+Policy 4,Snehal,Dummy Description,Rule 1,Dummy Description,BR_1,BR_2
+Policy 1,Snehal,Dummy Description2,Rule 1,Dummy Description,BR_3,BR_2
+Policy 1,Snehal,Dummy Description,Rule 3,Dummy Description,BR_5,BR_2
+Policy 5,Snehal,Dummy Description,Rule 4,Dummy Description,BR_7,BR_2
+Policy 2,Snehal,Dummy Description,Rule 3,Dummy Description,BR_2,BR_8
+Policy 2,Snehal,Dummy Description,Rule 6,Dummy Description,BR_4,BR_2
+Policy 3,Snehal,Dummy Description,Rule 7,Dummy Description,BR_6,BR_2

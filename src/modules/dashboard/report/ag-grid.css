@@ -1,0 +1,11 @@
+.ag-theme-material {
+    /* use theme parameters where possible */
+    --ag-material-accent-color: #363793;
+}
+
+.ag-theme-material .ag-header-cell-label {
+    /* font-style: italic; */
+    font-weight: bold;
+    /* color: ##363793; */
+    color: #000;
+}

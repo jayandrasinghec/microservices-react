@@ -1,0 +1,80 @@
+{
+  "data":{
+     "id": "root",
+     "name": "unotech.com",
+     "type": "root",
+     "children": [
+        {
+           "id": "child-1",
+           "name": "Users",             
+           "avatar": "US",
+           "type": "org",
+           "content":[
+             {"id": "Sr.Product Manager", "name": "Azar Hosseini", "avatar": "AH"},
+             {"id": "Manager", "name": "Filipa Gaspar", "avatar": "FG"},
+             {"id": "Sr.Developer", "name": "Monica Bottger", "avatar": "MB"}
+           ],
+           "children": [
+              {
+                 "id": "user-1",
+                 "name": "Azar Hosseini",
+                 "designation": "Sr.Product Manager",
+                 "avatar": "AH",
+                 "type": "user"
+              },
+              {
+                "id": "user-2",
+                "name": "Filipa Gaspar",
+                "designation": "Manager",
+                "avatar": "FG",
+                "type": "user"
+             }
+           ]
+        },
+        {
+           "id": "child-2",
+           "name": "Groups",
+           "avatar": "GP",
+           "type": "org",
+           "children": [
+              {
+                "id": "group-1",
+                "name": "Group 1",
+                "description": "Description for Group 1",
+                "avatar": "GP1",
+                "type": "org"
+              },
+              {
+                "id": "group-2",
+                "name": "Group 2",
+                "description": "Description for Group 2",
+                "avatar": "GP2",
+                "type": "org"
+              }
+           ]
+        },
+        {
+           "id": "child-3",
+           "name": "OU",
+           "avatar": "OU",
+           "type": "org",
+           "children": [
+              {
+                 "id": "ou-user-1",
+                 "name": "OU User 1",
+                 "description": "Description for OU 1",
+                 "avatar": "OU1",
+                 "type": "org"
+              },
+              {
+                "id": "ou-user-2",
+                "name": "OU User 2",
+                "description": "Description for OU 2",
+                "avatar": "OU2",
+                "type": "org"
+             }
+           ]
+        }
+     ]
+  }
+}

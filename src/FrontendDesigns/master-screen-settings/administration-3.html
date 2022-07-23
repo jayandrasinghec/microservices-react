@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		<title>Administration</title>
+		<meta name="" content="noarchive">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="title" content="">
+		<meta name="description" content="">
+		<link rel="SHORTCUT ICON" href="">
+    <link href="%PUBLIC_URL%/assets/css/fonts.css" rel="stylesheet">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/settings.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/nice-select.css" />
+<body>
+  <div class="cym-app">
+    <!-- Fixed sidebar -->
+    <div class="cym-app-drawer" style="">
+      <div class="cym-fixed-drawer">
+        <a href="javascript:void(0)" class="fixed-logo w-100"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAoCAYAAABJjCL8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAccSURBVHgB3VoLbFNVGP7Pubdbu9o9ujcwNseiQkDjI9MAxilOg8YZMKKi8owEDToQwYgxNgElEieoKBCCDEQggJBgIOElixAWBoigg82tdGNVpHRbadd2be+9x/+W3tGNvsABrV9y0t5zz+v7///85z/nXAL9A4KJBlIoSIHEoH8RS78s8Buycn90TiB0WxE770fIfXMQnk/IcfwX8kpnodpgQR32t7YjQbGCSELoscAbIR+pAxbUwe1EtDH6x3k95COZVk+DcGs1HQlRpySN3kYPaR7CEDcYDDJpEeKHuAx5LGIghUJMipdJq57e2fTA/Vubx0JJSbL8HEgcxD9ouBSV/ZiNv+dq8/PeJFQ102Sxcw6357jv8qX55rdHNsCt8+Y3BWHJj93NktU6+0sM2AJCSJEkMZ/pot3r6PbqCWFWySeuYdbWVa3znjbDzVvHbypCmu0LRzz3cEnOKiBkHiGQB35S7PAlm/O4IEIRykxPKHmEpKSPSK+Y4eYzi1pcJ/crcythBBDk8BipOGgpef6QbbEkdR/BjFcxTw1MahLc7rltRw9N/OfIrkrCxBfRXvYgRQaUPklUmrW6x8ZtGLzy5ONQNiUJ6/HoACOttXED/wArDjfoOBhYjpY7Bx9HBfIdQNg2V8fFL/e8P+4snDnj1ygSE6sLJ6dynDhDJFCJBQcE2mplkljtajyxwvLpxA64fYFOzKDjDtnv4mDAOhznZnwejQktnZwGnjyzY1T6tD3P3V2vEFfQMvVOm3FSyRLguVGMkWq4spwUEsp9rB1aur/ou9PPwLBhsvblaRXLcnpbQM/VNxwQfL5nwb90sb+Q+lx3rq50xyOph6NVbnnlzpaWc8XTJQZPoZXUBbKH69Mz1jy5ZHd54DluzZ9v+9M0yNJ2wTa09L696Vlps7aPSm3tWyhr2ny1bvTk54Fw+dXgXo3Gb+t5aSASVvi5aK3pMZ2O+2RAhnZSiprXi92eFIhzyAEMeNzd6ad/qfvJWjWhL3EyeMXJhzmtFn0BKUer0BHQTS3cYFzUOrB4CzxOBLnQ2IOuQRqV8Bb6QHSSkCXPcKpKivu1n1f+iGLvKDB/Y2OWRqJvSBLMRtLZcNV8h1LGVha1GctVm0wrhw/OzCPM9wED8hAELZ2EcbKfkIUTt3OeD/dCbGieKhYUzqFqdRZcO2/vUKu4lwuy7xhJGBuILLVhHLoSX8clwpL3OZx6ofFsujor26bKzU2ivEor53OUCNmpmq6ctBSOUnJXKMpMYoLX64r7dZ6P+FaSVN2WixneyzaXpqCgIy0rEwqydUSt4jPCVhElZ8uJJs+FelPcalwBH0shqdsDgrnNlV+Uq0Hi+lBlZG1bjH9fbjhwSuN1deuBCXE71xVEJI/e24fOrosA06B5p2KGEKKYZLd0dpmONhKryZImCUJMAo0HhB0o7tzagVA7SEyPD/L8vYY4EyVby7FG5/mT53K9bk/CkFYQ1jR9RKxGxp8jxWb/JqY3HBgCV7svdJadr22oFFzeWobrHSQYrmqL6727dVRNtOLPZxmzqg9Bkvo9/P+EXwiEnCUSW3TvaN0WA0mVreGUfvyGozgjKlFCk1BYOZAg8GueqFQ2bfGQiiHrm/sOnHUun3K0s/bHiTxh03zdroVp3vaR2x9N22ggpGcadGx/zZw5ovAjPi95M0nmrLL7gwQAn5ybZ8aUQzjuWVTsr8XfG7+gncXfNL9DPD2larcK5tqtO+UjG3lL26sF3Ltndg0rs9svLaZqWkrzk0Fy8lbJITghzkE1eYPGUJ7bBYz50KYxWmNVYrqxrnidcXS0ynmzdxRlOIZ+jUdce1DbpYHsP4iWTrX/8PpeiHP4o7CsNQ26VJWqnDHJgGeawwP5DhTENtJuX2aa/ToeVl49zDDYClMzIGUG5aBSYiQHl0LZd7TgYdBanAvL7UsndEACoFcIWrL5/BDR552Mnns6YUQ+oZFd3AnR51nf2dy40bF4vCN7zqaHRUI/xKpj4AppF1rMPo7AQut5+A22Toj7yE7BNfH3g6uOq6zqtOGUwlx8XYFZOkw+Jog1LlOTRehyjsdnDHoYXvfQOlGCKh0x7zIvfdcNCYawm4+Sr5qSxUzuJRClBajhu9EndDlNRq9gt2N4y6xIfjXhk77tWPKCGRIUUXde2Ut25aXkDJmFQd5Ml8nIJEfXMYzs5rYve/ksJDhi2Xb67+jyl9eOYO2dufewun01BoMA/wPETD7oWTmgSKjbmVCIdtEYfM0bnBecElYI0fbcipb7hqvB38JE+hwkVihX4P4UuPG5UZC+7fVJPeONZRsabObhrIBCaCFdz4B72q2vr78RYUb7GOGaDyiuR8JyJdnRiWVlZaFMXZH27TjBUbQd6o4wmHQvX3UjBxBSTU2NYgU0zCAI3Jor6+DpFwoK8ZBR579nSdH9Aj5rFwAAAABJRU5ErkJggg==" alt="" title="" /></a>
+        <!-- Menu -->
+          <ul>
+            <li><a href="javascript:void(0)"><span class="icon-view dashboard"></span><span class="text-view">Dashboard</span></a></li>
+            <li><a href="javascript:void(0)"><span class="icon-view directory"></span><span class="text-view">Directory</span></a></li>
+            <li><a href="javascript:void(0)"><span class="icon-view apps"></span><span class="text-view">Applications</span></a></li>
+            <li><a href="javascript:void(0)"><span class="icon-view admin"></span><span class="text-view">Administration</span></a></li>
+            <li><a href="javascript:void(0)"><span class="icon-view setting"></span><span class="text-view">Settings</span></a></li>
+            <li><a href="javascript:void(0)"><span class="icon-view report"></span><span class="text-view">Report</span></a></li>
+          </ul>
+        <!-- Menu -->
+      </div>
+    </div>
+    <!-- Fixed sidebar -->
+    <!-- Body content -->
+      <div class="cym-dashboard-cont user-dashboard-cont">
+        <h1 class="settings-page-heading">Administration</h1>
+        <!-- CyM user cards -->
+          <div class="d-flex flex-column flex-lg-row flex-sm-column flex-md-column align-items-center justify-content-between">
+            <div class="cym-tab-view">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Multi-factor Authentication</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Rules</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link active" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Admins</a>
+                </li>
+                </ul>
+            </div>
+            <!-- notification -->
+              <div class="d-flex flex-row align-items-center mt-3 mt-sm-3 mt-md-3 mt-lg-0">
+                <a href="javascript:void(0)">
+                  <img src="assets/img/icons/bell.svg" alt="" title="" />
+                </a>
+                <div class="user-avatar pl-4">
+                    <a href="javascript:void(0)" class="d-flex flex-row align-items-center">
+                      <span class="user-img pr-2">
+                        <img src="assets/img/user-icon.png" alt="" title="" />
+                      </span>
+                      <span>Caspar Sawrey</span>
+                      <span class="down-arrow ml-2"></span>
+                    </a>
+                </div>
+              </div>
+            <!-- notification -->
+          </div>
+
+            <!-- Add Admin -->
+              <div class="add-admin-view pt-4">
+                <h1 class="text-center mb-3">Add New Admin</h1>
+                <!-- Admin Roles -->
+                  <div class="add-admin-roles w-75 m-auto">
+                      <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+                    <div class="admin-col">
+                    <div class="d-flex flex-column flex-sm-column flex-md-row justify-content-between align-items-center">
+                      <div class="admin-detail-view d-flex flex-row align-items-center">
+                        <div class="img-view">
+                          <img src="assets/img/admin.png" alt="" title="">
+                          <span class="status avail"></span>
+                        </div>
+                        <div class="pl-3">
+                          <h3>Alberto Raya</h3>
+                          <span>Sr. Product Manager</span>
+                        </div>
+                      </div>
+                        <div class="actions-view">
+                          <a href="javascript:void(0)"><img src="assets/img/icons/close.svg" alt="" title=""></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                      </div>
+                      <!-- Assign Roles -->
+                        <div class="assign-roles-view cym-custom-scroll mt-4">
+                          <h5>Assign Role</h5>
+                          <div class="row mt-3">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                              <div class="assign-role-col">
+                                <div class="custom-radio">
+                                  <input type="radio" name="user" id="1"  /> <label for="1" class="mb-0">Super Admin </label>
+                                  <span class="d-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur.</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                              <div class="assign-role-col">
+                                <div class="custom-radio">
+                                  <input type="radio" name="user" id="2"  /> <label for="2" class="mb-0">Super Admin </label>
+                                  <span class="d-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur.</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row mt-3">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                              <div class="assign-role-col">
+                                <div class="custom-radio">
+                                  <input type="radio" name="user" id="3"  /> <label for="3" class="mb-0">Super Admin </label>
+                                  <span class="d-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur.</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                              <div class="assign-role-col">
+                                <div class="custom-radio">
+                                  <input type="radio" name="user" id="4"  /> <label for="4" class="mb-0">Super Admin </label>
+                                  <span class="d-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur.</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      <!-- Assign Roles -->
+                    <!-- Admin Roles -->
+                  </div>
+
+              </div>
+            <!-- Add Admin -->
+
+        <!-- Cym User cards -->
+      </div>
+    <!-- Body content -->
+  </div>
+  <script type="text/javascript" src="assets/js/jquery.min.js" ></script>
+  <script type="text/javascript" src="assets/js/popper.min.js"></script>
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.nice-select.min.js"></script>
+  <script type="text/javascript" src="assets/js/index.js"></script>
+</body>
+</html>

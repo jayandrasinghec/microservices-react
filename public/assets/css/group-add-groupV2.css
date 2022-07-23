@@ -1,0 +1,12 @@
+.add-progress-col.active .completed-icon {
+    border: 5px solid var(--primary-blue);
+    background: var(--primary-blue);
+}
+.add-progress-col .completed-icon {
+    background: var(--l-gray);
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    border-radius: 50px;
+    border: 5px solid transparent;
+}

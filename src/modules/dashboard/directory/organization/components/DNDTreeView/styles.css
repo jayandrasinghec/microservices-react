@@ -1,0 +1,103 @@
+.Mui-selected > .MuiTreeItem-content{
+    color:var (--theme-font-1);
+    background: transparent !important;
+    padding: 0%!important;
+}
+.Mui-expanded .MuiTreeItem-content{
+    background-color: transparent!important;
+}
+.MuiTreeItem-root .MuiTreeItem-content {
+    /* background-color: var(--theme-bg-1) !important; */
+    /*background: transparent !important; */
+     border-radius: 0px !important; 
+    padding: 0px !important;
+    margin-bottom: 4px;
+}
+
+.MuiTreeItem-iconContainer {
+    position: initial !important ;
+  
+}
+.overClass{
+    pointer-events: none;
+}
+.Mui-selected {
+    color: #173F74 !important; 
+}
+.Mui-selected > .MuiTreeItem-content{
+    color: #007bff !important; 
+}
+
+.container_tree{
+    background-color: white;
+    position: relative;
+    height: 100%;
+
+    
+}
+.container_tree .MuiTabs-root{
+    background: #e9edf6;
+}
+.MuiTabs-flexContainer{
+    background: #F1F1F1 !important;
+    color: #173F74 !important;
+    font-size: 12px!important;
+
+
+
+
+}
+.MuiTab-wrapper{
+    text-transform: capitalize;
+}
+
+.MuiTab-root{
+    min-width: 50px !important;
+}
+.button{
+
+        position: absolute;
+        bottom: 25px;
+        right: 21px;
+        height: 40px;
+        width: 40px;
+  
+
+}
+button{
+    border-radius: 50%;
+}
+.default-label{
+height: 40px;
+padding-top: 10px;
+padding-left: 19px;
+padding-bottom: 13px;
+font-family: 'Poppins', sans-serif !important;
+font-style: normal!important;
+font-weight: normal!important;
+font-size: 10px!important;
+line-height: 15px!important;
+color: #173F74 !important;
+    border-bottom:  1px solid rgba(23, 63, 116, 0.5)!important;
+}
+.treeview-con{
+    padding: 0px 10px;
+}
+.tab{
+
+font-family: 'Poppins', sans-serif !important;
+font-style: normal!important;
+font-weight: 500!important;
+font-size: 12px!important;
+line-height: 18px!important;
+
+
+color: #173F74!important;
+}
+
+.MuiCollapse-wrapperInner{
+    margin-top:-4px!important;
+}
+.MuiTreeItem-content{
+    align-items: center!important;
+}

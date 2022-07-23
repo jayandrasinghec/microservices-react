@@ -1,0 +1,67 @@
+body
+  margin: 0
+  font-family: 'Roboto', sans-serif
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+code
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace
+
+body, html, #root, #app
+  height: 100%
+
+.MuiToggleButton-root.Mui-selected
+  background: #363793 !important
+  color: #fff !important
+
+.MuiOutlinedInput-root
+  background: #f6f6f7;
+
+a, a:hover, a:visited
+  text-decoration: none !important
+  transition: linear 500
+
+.MuiDialogTitle-root h2 button
+  padding: 0px !important
+
+.MuiDialogTitle-root h2 button .MuiIconButton-label
+  padding: 12px !important
+
+.MuiDialogContent-root .MuiPaper-root .MuiCardContent-root
+  padding: 24px 16px;
+
+*
+  outline: none !important
+
+/* width */
+::-webkit-scrollbar
+  width: 5px
+  border-radius: 5px
+
+/* Track */
+::-webkit-scrollbar-track
+  background: transparent
+
+/* Handle */
+::-webkit-scrollbar-thumb
+  background: #363793
+
+.MuiToggleButton-sizeSmall
+  padding: 4px !important
+
+.app-search-field
+  border-radius: 11px
+  overflow: hidden
+  max-width: 500px
+
+  fieldset
+    border: 0
+
+  .MuiInputBase-root
+    background: #fff
+
+.MuiOutlinedInput-notchedOutline
+  border-color: rgba(0, 0, 0, 0.1)
+
+@import './_variables'
+@import './2-components/_dashLayout'
